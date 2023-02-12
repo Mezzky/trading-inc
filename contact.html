@@ -36,7 +36,7 @@
     <header class="flex w-full black justify-between items-start">
         <div class="logo visible z-10 opacity-100">
             <a href="index.html">
-                <img class="w-28 tablet:w-36 m-5 laptop:w-40" src="img/trading-inc-logo.webp">
+                <img class="w-28 tablet:w-36 m-5 ml-[35px] laptop:w-40" src="img/trading-inc-logo.webp">
             </a>
         </div>
             <nav class="navbar absolute w-full h-screen bg-black/90 left-0 flex items-center justify-center invisible opacity-0 duration-500">
@@ -60,12 +60,12 @@
             </nav>
         <div class="empty"></div>
         <div class="icon-container z-10 mr-8 mt-10 flex items-center gap-2">
-            <a href="#contact" class="rectangle w-[40px] h-[16px] border-white border-[2px]"></a>
-            <div class="menu-toggle relative flex items-center h-[30px] w-[30px]">
-                <button id="hamburger" class="absolute flex flex-col items-end gap-[4px]">
-                    <span class="bg-white h-[2px] w-[35px] block transition ease-in-out duration-300 origin-top-right"></span>
-                    <span class="bg-white h-[2px] w-[35px] block transition ease-in-out duration-300"></span>
-                    <span class="bg-white h-[2px] w-[35px] block transition ease-in-out duration-300 origin-bottom-right"></span>
+            <a href="#contact" class="rectangle w-[45px] h-[20px] border-white border-[2px]"></a>
+            <div class="menu-toggle relative flex items-center w-[40px]">
+                <button id="hamburger" class="absolute flex flex-col items-end gap-[6px]">
+                    <span class="bg-white h-[2px] w-[40px] block transition ease-in-out duration-300 origin-top-right"></span>
+                    <span class="bg-white h-[2px] w-[40px] block transition ease-in-out duration-300"></span>
+                    <span class="bg-white h-[2px] w-[40px] block transition ease-in-out duration-300 origin0-bottom-right"></span>
                 </button>
             </div>
         </div>
@@ -80,13 +80,13 @@
     <!-- Main Page -->
     <section id="main" class="main-page">
         <div class="background-contact"></div>
-        <div class="overlay h-[200px] laptop:h-[250px]"></div>
-        <div class="content flex flex-col p-8 tablet:p-0 tablet:pb-14 tablet:pl-10 laptop:gap-4">
-            <h1 class="fade text-2xl font-medium text-white -ml-1 tablet:text-3xl laptop:text-5xl">CONTACT</h1>
-            <P class="fade tablet:w-[480px] text-gray-100 font-normal text-sm tablet:text-lg">Contact us and let us know about your property type (Single family home, 2-4 income unit or Condo) with a property address</P>
-            <div class="sub-box fade border flex justify-center items-center border-white py-3 max-w-lg">
+        <div class="overlay h-[250px] laptop:h-[280px]"></div>
+        <div class="content flex flex-col p-8 gap-1 tablet:p-0 tablet:pb-14 tablet:pl-10 laptop:gap-4">
+            <h1 class="fade text-3xl font-medium text-white -ml-1 3xl laptop:text-5xl">CONTACT</h1>
+            <P class="fade tablet:w-[550px] text-gray-100 font-semibold text-sm tablet:text-lg">For information about specific products or services, please use the form below. We look forward to hearing from you and connecting with you to support your global trade needs</P>
+            <div class="sub-box fade border flex justify-center items-center border-white py-3 max-w-lg mt-3">
                 <div class="load"></div>
-                <p class="cursor-pointer px-4 text-white font-normal text-sm tablet:text-lg">Sun Valuation 140 S Reno st Los Angeles, CA 90057</p>
+                <p class="cursor-pointer px-4 text-white font-normal text-sm tablet:text-lg">145 S Fairfax Ave Suite 200 Los Angeles, CA 90036</p>
             </div>
         </div> 
     </section>
@@ -96,11 +96,23 @@
         <div class="contact-form flex flex-col gap-6">
             <h1 class="text-3xl text-gray-600">Get in Touch</h1>
             <form class="form-submit flex flex-col gap-3 max-w-xl" method="POST">
-                <input class="border border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="text" required autocomplete="off" placeholder="Name*" name="Name" id="name">
-                <input class="border border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="number" required autocomplete="off" placeholder="Phone Number*" name="Number" id="number">
-                <input class="border border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="email" required autocomplete="off" placeholder="Email Address*" name="Email" id="email">
-                <input class="border border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="text" required autocomplete="off" placeholder="Property Address*" name="Address" id="address">
-                <textarea class="resize-none border border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" autocomplete="off" placeholder="Message*" name="Message" id="message" cols="10" rows="5"></textarea>
+                <div class="input-box flex w-full gap-3">
+                    <input class="border w-1/2 border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="text" required autocomplete="off" placeholder="Your Name*" name="Name" id="name">
+                    <input class="border w-1/2 border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="email" required autocomplete="off" placeholder="Your Email*" name="Email" id="email">
+                </div>
+                <div class="input-box flex w-full gap-3">
+                    <input class="border w-1/2 border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="number" required autocomplete="off" placeholder="Your Phone*" name="Number" id="number">
+                    <input class="border w-1/2 border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="text" required autocomplete="off" placeholder="Your Website*" name="Web" id="web">
+                </div>
+                <div class="input-box flex w-full gap-3">
+                    <input class="border w-1/2 border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="text" required autocomplete="off" placeholder="Country*" name="Country" id="country">
+                    <input class="border w-1/2 border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="text" required autocomplete="off" placeholder="Company Name*" name="Company" id="company">
+                </div>
+                <select class="border border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" name="Industry" id="industry">
+                    <option value="industry">Industry 1</option>
+                    <option value="industry">Industry 2</option>
+                </select>
+                <textarea class="resize-none border border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" autocomplete="off" required placeholder="Message*" name="Message" id="message" cols="10" rows="5"></textarea>
                 <div class="privacy">
                     <input type="checkbox" name="" id="policy">
                     <label for="policy">I Understand that my data will be stored in accordance with the privacy policy</label>
@@ -119,42 +131,41 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script>
-        const name = document.getElementById('name');
-        const number = document.getElementById('number');
-        const email = document.getElementById('email');
-        const address = document.getElementById('address');
-        const msg = document.getElementById('message');
-        const submit = document.getElementsByClassName('form-submit')[0];
+        // const name = document.getElementById('name');
+        // const number = document.getElementById('number');
+        // const email = document.getElementById('email');
+        // const address = document.getElementById('address');
+        // const msg = document.getElementById('message');
+        // const submit = document.getElementsByClassName('form-submit')[0];
 
-        submit.addEventListener('submit',(e)=>{
-            e.preventDefault();
+        // submit.addEventListener('submit',(e)=>{
+        //     e.preventDefault();
 
-            let ebody = `
-            <b>Name: </b>${name.value}
-            <br>
-            <b>Phone Number: </b>${number.value}
-            <br>
-            <b>Email: </b>${email.value}
-            <br>
-            <b>Address: </b>${address.value}
-            <br>
-            <b>Message: </b>${msg.value}
-            <br>
-            `
+        //     let ebody = `
+        //     <b>Name: </b>${name.value}
+        //     <br>
+        //     <b>Phone Number: </b>${number.value}
+        //     <br>
+        //     <b>Email: </b>${email.value}
+        //     <br>
+        //     <b>Address: </b>${address.value}
+        //     <br>
+        //     <b>Message: </b>${msg.value}
+        //     <br>
+        //     `
             
-            Email.send({
-                SecureToken : "8f65a45c-7076-4bdd-a5d9-7d59c1ef8171",
-                To : 'contact@sunvaluation.com',
-                From : "contact@sunvaluation.com",
-                Subject : "Sun Valuation Message, From " + email.value,
-                Body : ebody
-            }).then(
-                message => alert("Email Sent Successfully!")
-                );
-            submit.reset();
-            return false;
-        });
-
+        //     Email.send({
+        //         SecureToken : "8f65a45c-7076-4bdd-a5d9-7d59c1ef8171",
+        //         To : 'contact@sunvaluation.com',
+        //         From : "contact@sunvaluation.com",
+        //         Subject : "Sun Valuation Message, From " + email.value,
+        //         Body : ebody
+        //     }).then(
+        //         message => alert("Email Sent Successfully!")
+        //         );
+        //     submit.reset();
+        //     return false;
+        // });
     </script>
 
 </body>
