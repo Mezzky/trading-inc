@@ -40,6 +40,7 @@ appraisal.addEventListener('click', () => {
     textApr.classList.add('show');
     line.classList.add('show');
     ul.classList.add('show');
+    ul.classList.add('hidden');
     textAbo.classList.remove('show');
 });
 
@@ -47,6 +48,7 @@ about.addEventListener('click', () => {
     textAbo.classList.add('show');
     line.classList.add('show');
     ul.classList.add('show');
+    ul.classList.add('hidden');
     textApr.classList.remove('show');
 });
 
@@ -56,5 +58,6 @@ back.forEach(el => {
         textAbo.classList.remove('show');
         line.classList.remove('show');
         ul.classList.remove('show');
+        ul.classList.remove('hidden');
     });
 });

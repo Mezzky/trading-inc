@@ -12,6 +12,19 @@ body{
 	scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(43, 43, 43);
+}
+
 
 /* MAIN STYLE */
 
@@ -103,6 +116,7 @@ header nav .box ul li a:hover{
 }
 
 .navbar ul.show{
+	opacity: 0;
 	animation: fade 2s linear forwards;
 }
 
@@ -351,9 +365,9 @@ header nav .box ul li a:hover{
 }
 
 @media screen and (max-width: 425px) {
-	#box{
+	/* #box{
 		transform: translateX(-80px);
-	}
+	} */
 
 	#textApraisal, #textAbout{
 		width: 350px;
@@ -361,6 +375,10 @@ header nav .box ul li a:hover{
 	
 	#line{
 		background-color: transparent;
+	}
+
+	.navbar .box ul.hidden{
+		visibility: hidden;
 	}
 }
 

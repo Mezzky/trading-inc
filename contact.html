@@ -40,21 +40,29 @@
             </a>
         </div>
             <nav class="navbar absolute w-full h-screen bg-black/90 left-0 flex items-center justify-center invisible opacity-0 duration-500">
-                <div id="box" class="box flex items-center gap-10 p-5">
+                <div id="box" class="box flex items-center gap-5 p-5 laptop:gap-8">
                     <ul class="flex flex-col gap-2 duration-[3s] delay-100">
-                        <li><a id="appraisal">Appraisal</a></li>
-                        <li><a id="about">About</a></li>
+                        <li><a id="appraisal">About Us</a></li>
+                        <li><a id="about">Why Choose Us</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <div id="line" class="line w-[1px] h-[0px] bg-gray-300 self-start"></div>
+                    <div id="line" class="line w-[1px] h-[0px] bg-gray-300 self-start hidden tablet:block"></div>
                     <div id="textApraisal" class="w-[400px] flex-col items-start gap-2 hidden opacity-0">
                         <button id="back" class="text-gray-300 font-semibold text-lg">&lt; Back</button>
-                        <p class="text-gray-300 text-lg">Sun valuation appraisal reports are reliable, concise documents that exceed industry standards. The appraised value is a vital piece of information in the loan process. As a result, getting this right is crucial for lenders and brokers. That's what our clients have come to expect, some of whom are the top names in the legal profession and mortgage lending industry. Each report offers thorough and informed advice written by seasoned appraisers.</p>
+                        <p class="text-gray-300 text-lg overflow-y-scroll pr-5 h-72">EG TRADING INC is a leading international trading company, specializing in the import and export of a wide range of products and commodities. With a commitment to quality, reliability and customer satisfaction, we have established ourselves as a trusted partner in the global marketplace. We offer a full range of services to support our clients in their international trading endeavors. 
+                            <br>Our services include:
+                            <br>-Sourcing and procurement of products and commodities
+                            <br>-Logistics and transportation management
+                            <br>-Customs clearance and documentation
+                            <br>-Quality control and inspection services
+                            <br>-Market research and analysis
+                            <br>-Business development and market entry strategies
+                            </p>
                     </div>
                     
                     <div id="textAbout" class="w-[400px] flex-col items-start gap-2 hidden opacity-0">
                         <button id="back" class="text-gray-300 font-semibold text-lg">&lt; Back</button>
-                        <p class="text-gray-300 text-lg">Sun valuation is a residential real estate appraisal firm based in Los Angeles, CA. It was founded in early 2023 by Certified Real Estate Appraiser Bosang Kwon, with a clear vision focused on quality appraisal work and exceptional customer experience as possible. Sun Valuation provides accurate and sound real estate valuation solutions of residential property.</p>
+                        <p class="text-gray-300 text-lg overflow-y-scroll pr-5 h-72">EG TRADING INC, we are passionate about helping businesses succeed in the global marketplace. We believe that international trade should be accessible to all, which is why we offer affordable solutions without compromising on quality. Our team of experts is always available to provide support and advice, and we work closely with our clients to understand their unique requirements. Whether you are an established company or just starting out, we can help you navigate the world of international trade with confidence. Choose us and join our growing community of successful businesses.</p>
                     </div>
                 </div>
             </nav>
@@ -108,10 +116,7 @@
                     <input class="border w-1/2 border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="text" required autocomplete="off" placeholder="Country*" name="Country" id="country">
                     <input class="border w-1/2 border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" type="text" required autocomplete="off" placeholder="Company Name*" name="Company" id="company">
                 </div>
-                <select class="border border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" name="Industry" id="industry">
-                    <option value="industry">Industry 1</option>
-                    <option value="industry">Industry 2</option>
-                </select>
+                <input class="border border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" required autocomplete="off" placeholder="Industry*" name="Industry" id="industry">
                 <textarea class="resize-none border border-gray-600 text-md p-2 focus:outline-gray-600 focus:outline-0" autocomplete="off" required placeholder="Message*" name="Message" id="message" cols="10" rows="5"></textarea>
                 <div class="privacy">
                     <input type="checkbox" name="" id="policy">
