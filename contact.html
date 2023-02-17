@@ -128,41 +128,46 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script>
-        // const name = document.getElementById('name');
-        // const number = document.getElementById('number');
-        // const email = document.getElementById('email');
-        // const address = document.getElementById('address');
-        // const msg = document.getElementById('message');
-        // const submit = document.getElementsByClassName('form-submit')[0];
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const number = document.getElementById('number');
+        const web = document.getElementById('web');
+        const country = document.getElementById('country');
+        const company = document.getElementById('company');
+        const industry = document.getElementById('industry');
+        const submit = document.getElementsByClassName('form-submit')[0];
 
-        // submit.addEventListener('submit',(e)=>{
-        //     e.preventDefault();
+        submit.addEventListener('submit',(e)=>{
+            e.preventDefault();
 
-        //     let ebody = `
-        //     <b>Name: </b>${name.value}
-        //     <br>
-        //     <b>Phone Number: </b>${number.value}
-        //     <br>
-        //     <b>Email: </b>${email.value}
-        //     <br>
-        //     <b>Address: </b>${address.value}
-        //     <br>
-        //     <b>Message: </b>${msg.value}
-        //     <br>
-        //     `
+            let ebody = `
+            <b>Name: </b>${name.value}
+            <br>
+            <b>Email: </b>${email.value}
+            <br>
+            <b>Phone Number: </b>${number.value}
+            <br>
+            <b>Website: </b>${web.value}
+            <br>
+            <b>Country: </b>${country.value}
+            <br>
+            <b>Company: </b>${company.value}
+            <br>
+            <b>Industry: </b>${industry.value}
+            `
             
-        //     Email.send({
-        //         SecureToken : "8f65a45c-7076-4bdd-a5d9-7d59c1ef8171",
-        //         To : 'contact@sunvaluation.com',
-        //         From : "contact@sunvaluation.com",
-        //         Subject : "Sun Valuation Message, From " + email.value,
-        //         Body : ebody
-        //     }).then(
-        //         message => alert("Email Sent Successfully!")
-        //         );
-        //     submit.reset();
-        //     return false;
-        // });
+            Email.send({
+                SecureToken : "b616c9e8-8bea-4768-8788-28f7da0a7d9a",
+                To : 'contact@egtradingonline.com',
+                From : "contact@egtradingonline.com",
+                Subject : "Eg Trading Online Message, From " + email.value,
+                Body : ebody
+            }).then(
+                message => alert("Email Sent Successfully!")
+                );
+            submit.reset();
+            return false;
+        });
     </script>
 
 </body>
